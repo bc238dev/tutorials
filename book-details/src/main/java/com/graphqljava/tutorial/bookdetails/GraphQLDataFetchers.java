@@ -38,7 +38,7 @@ public class GraphQLDataFetchers {
                     "lastName", "Rice")
     );
 
-    public DataFetcher getBookByIdDataFetcher() {
+    public DataFetcher<Map<String, String>>  getBookByIdDataFetcher() {
         return dataFetchingEnvironment -> {
             String bookId = dataFetchingEnvironment.getArgument("id");
             return books
@@ -49,7 +49,7 @@ public class GraphQLDataFetchers {
         };
     }
 
-    public DataFetcher getAuthorDataFetcher() {
+    public DataFetcher<Map<String, String>>  getAuthorDataFetcher() {
         return dataFetchingEnvironment -> {
             Map<String, String> book = dataFetchingEnvironment.getSource();
             String authorId = book.get("authorId");

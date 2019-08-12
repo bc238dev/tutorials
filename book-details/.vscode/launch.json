@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BookDetailsApplication",
+            "request": "launch",
+            "mainClass": "com.graphqljava.tutorial.bookdetails.BookDetailsApplication",
+            "projectName": "book-details"
+        }
+    ]
+}
